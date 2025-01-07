@@ -1,7 +1,7 @@
 title: AUUAS
 description: Official website of the UAV Student Club.
 baseurl: "" # Leave empty for root
-url: "https://<your-username>.github.io" # Replace <your-username> with your GitHub username
+url: "https://auuas-website.github.io" # Replace <your-username> with your GitHub username
 
 theme: null # No default theme
 plugins:
