@@ -1,0 +1,11 @@
+h1 {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.section {
+    padding: 2em 10vw !important;
+
+}
