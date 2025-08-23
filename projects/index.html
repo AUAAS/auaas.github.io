@@ -1,29 +1,61 @@
 ---
 layout: default
 title: Projects
+permalink: /projects/
 ---
 
-<div
-  class="container-fluid d-flex flex-column justify-content-center align-items-center text-center py-5 section"
-  style="height: 35vh"
+<!-- Hero -->
+<section
+  class="hero-sub"
+  style="
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.55),
+        rgba(0, 0, 0, 0.25)
+      ),
+      url('/assets/images/jordan-cormack-DwMuY7PFPg0-unsplash.jpg') center/cover
+        no-repeat;
+  "
 >
-  <h1>Our Projects</h1>
-</div>
+  <div class="container">
+    <h1 class="display-5 fw-bold">Projects</h1>
+    <p class="lead mb-0">
+      Designing, simulating, and prototyping custom UAS — remotely.
+    </p>
+  </div>
+</section>
 
-<div class="container py-3">
-  <div class="row">
+<section class="container py-5">
+  <div class="row g-4">
     <div class="col-md-6">
-      <h2>Drone Design</h2>
-      <p>Innovative drone models tailored for specific missions.</p>
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h3 class="h5 card-title mb-2">
+            SkyGuardian — Wildfire Detect &amp; Respond
+          </h3>
+          <ul class="list-unstyled small text-muted mb-3">
+            <li>
+              <i class="bi bi-cpu me-2"></i>IR hotspot detection (940nm) &amp;
+              KML mapping
+            </li>
+            <li>
+              <i class="bi bi-geo me-2"></i>RTK GNSS, Pixhawk 6X, RPi + Mira220
+            </li>
+            <li>
+              <i class="bi bi-droplet me-2"></i>Precision water delivery
+              subsystem
+            </li>
+          </ul>
+          <p class="mb-0">
+            Status: subsystem prototyping &amp; integration planning for 2026
+            competition.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="container py-3">
-  <div class="row">
-    <div class="col-md-6">
-      <h2>Autonomous Flight</h2>
-      <p>Developing advanced systems for UAV automation.</p>
-    </div>
+  <div class="text-center mt-5">
+    <a href="/join/" class="btn btn-primary"><i class=""></i>Join the Team</a>
   </div>
-</div>
+</section>

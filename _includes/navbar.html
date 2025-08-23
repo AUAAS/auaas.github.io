@@ -1,13 +1,10 @@
 <!-- Nav -->
-<nav
-  id="mainNav"
-  class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm"
->
+<nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top">
   <div class="container">
-    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="/">
       <!-- Optional AU / team logo -->
-      <!-- <img src="assets/img/auaas-logo.svg" alt="AUAAS"> -->
-      <span>{{ site.short_title | default: "AUAAS" }}</span>
+      <img src="/assets/images/AUAAS Logo.png" alt="AUAAS" />
+      <!-- <span>{{ site.short_title | default: "AUAAS" }}</span> -->
     </a>
     <button
       class="navbar-toggler"
@@ -23,18 +20,32 @@
 
     <div id="navContent" class="collapse navbar-collapse">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#who">Who We Are</a></li>
         <li class="nav-item">
-          <a class="nav-link" href="#mission">Mission & Vision</a>
+          <a class="nav-link" href="/projects" style="color: white">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#competitions">Competitions</a>
+          <a class="nav-link" href="/competitions" style="color: white"
+            >Competitions</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#remote">Remote Advantage</a>
+          <a class="nav-link" href="/team" style="color: white">Team</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#get-involved">Get Involved</a>
+          <a class="nav-link" href="/about" style="color: white">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact" style="color: white">Contact</a>
+        </li>
+        <li
+          class="nav-item d-flex flex-column justify-content-center ms-lg-2 ms-0 mt-2 mt-lg-0"
+        >
+          <a class="btn btn-outline-light" href="/team/join/">Join the Team</a>
+        </li>
+        <li
+          class="nav-item d-flex flex-column justify-content-center ms-lg-2 ms-0 mt-2 mt-lg-0"
+        >
+          <a class="btn btn-light" href="/sponsors">Sponsor Us</a>
         </li>
       </ul>
     </div>

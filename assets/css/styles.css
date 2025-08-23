@@ -3,29 +3,31 @@
   --aua-dark: #0b1220;
   --overlay: rgba(0, 0, 0, 0.45);
 }
-/* Hero */
-.hero {
+
+/* Home hero (full viewport height) */
+.hero-home {
+  min-height: 90vh; /* full height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  min-height: 80vh;
-  display: grid;
-  place-items: center;
   color: #fff;
   text-align: center;
-  background: #111 center/cover no-repeat;
-  background-image: url("assets/img/hero-drone.jpg"); /* Replace with your drone image */
 }
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, var(--overlay), rgba(0, 0, 0, 0.15));
-}
-.hero > .hero-inner {
+
+/* Subpage heroes */
+.hero-sub {
+  min-height: 80vh; /* 60% of viewport */
+  display: flex;
+  align-items: center;
   position: relative;
-  z-index: 1;
-  max-width: 900px;
-  padding: 3rem 1rem;
+  color: #fff;
 }
+.hero-home .container,
+.hero-sub .container {
+  z-index: 1;
+}
+
 .section-pad {
   padding: 5rem 0;
 }
@@ -65,11 +67,20 @@ footer a:hover {
   height: 28px;
 }
 
-h1 {
-  font-family: "Inter", serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
+/* Apply Orbitron */
+h1,
+h2,
+h3,
+.navbar-brand {
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 0.5px;
+}
+
+/* Optional: make hero title bold and futuristic */
+.hero h1 {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .navbar-brand {
@@ -77,6 +88,49 @@ h1 {
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+}
+
+.navbar {
+  padding-top: 0.6rem; /* default is ~0.5rem */
+  padding-bottom: 0.6rem;
+  min-height: 4.5rem; /* ensures consistent height */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: rgba(13, 17, 26, 1) !important; /* dark color */
+}
+
+/* On large screens (lg and up): start transparent */
+@media (min-width: 992px) {
+  .navbar {
+    background-color: transparent !important;
+    box-shadow: none;
+  }
+  .navbar.scrolled {
+    background-color: rgba(13, 17, 26, 1) !important;
+  }
+}
+
+.navbar-brand {
+  font-size: 1.4rem; /* scale brand text/icon a bit */
+}
+
+.navbar-brand img {
+  height: 52px; /* scale brand text/icon a bit */
+}
+.navbar-nav .nav-link {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-size: 1.05rem; /* optional: make links more prominent */
+}
+
+/* Scrolled state */
+.navbar.scrolled {
+  background-color: rgba(
+    13,
+    17,
+    26,
+    1
+  ) !important; /* dark color with opacity */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .section {
