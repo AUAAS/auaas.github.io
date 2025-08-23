@@ -1,9 +1,10 @@
 title: AUAAS
-description: Official website of the UAV Student Club.
-baseurl: "/auaas-website" # Leave empty for root
+description: Official website of the AUAAS Student Club.
+baseurl: "/" # Leave empty for root
 url: "https://auaas.github.io"
 
 theme: null # No default theme
+markdown: kramdown
 plugins:
   - jekyll-seo-tag
   - jekyll-feed
