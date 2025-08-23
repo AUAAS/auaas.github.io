@@ -1,3 +1,70 @@
+:root {
+  --aua-primary: #0d6efd; /* Bootstrap primary */
+  --aua-dark: #0b1220;
+  --overlay: rgba(0, 0, 0, 0.45);
+}
+/* Hero */
+.hero {
+  position: relative;
+  min-height: 80vh;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  text-align: center;
+  background: #111 center/cover no-repeat;
+  background-image: url("assets/img/hero-drone.jpg"); /* Replace with your drone image */
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, var(--overlay), rgba(0, 0, 0, 0.15));
+}
+.hero > .hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  padding: 3rem 1rem;
+}
+.section-pad {
+  padding: 5rem 0;
+}
+.lead-tight {
+  line-height: 1.6;
+}
+
+/* Cards & icons */
+.icon-pill {
+  width: 3rem;
+  height: 3rem;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 999px;
+  background: rgba(13, 110, 253, 0.1);
+  color: var(--aua-primary);
+}
+
+/* Footer */
+footer {
+  background: #0a0f19;
+  color: #cfd8e3;
+}
+footer a {
+  color: #9dc1ff;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Smooth scrolling offset for fixed navbar */
+:target {
+  scroll-margin-top: 6rem;
+}
+.navbar-brand img {
+  height: 28px;
+}
+
 h1 {
   font-family: "Inter", serif;
   font-optical-sizing: auto;
@@ -5,7 +72,13 @@ h1 {
   font-style: normal;
 }
 
-.section {
-    padding: 2em 10vw !important;
+.navbar-brand {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
 
+.section {
+  padding: 2em 10vw !important;
 }
